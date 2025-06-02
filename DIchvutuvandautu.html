@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Trend Following - VPS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f6f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #004080, #007bff);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: -60px auto 40px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0056b3;
+            margin: 40px 0 20px;
+            border-left: 4px solid #007bff;
+            padding-left: 12px;
+        }
+        h3 {
+            margin: 30px 0 15px;
+            color: #333;
+        }
+        ul {
+            line-height: 1.7;
+            margin-left: 20px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #007b00;
+        }
+        img.chart-img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        img.chart-img:hover {
+            transform: scale(1.02);
+        }
+        .intro-section {
+            margin-bottom: 40px;
+        }
+        .intro-section h2 {
+            font-size: 24px;
+            color: #222;
+            margin-bottom: 10px;
+        }
+        .intro-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #f8f9fb;
+            color: #333;
+            text-align: left;
+            padding: 40px 10%;
+            font-size: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
+            border-top: 1px solid #ccc;
+        }
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+        .footer-col h4 {
+            color: #002b5e;
+            margin-bottom: 12px;
+        }
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-col ul li {
+            margin-bottom: 6px;
+        }
+        .footer-col ul li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .footer-col ul li a:hover {
+            color: #007bff;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            padding: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+        .facebook { background: #3b5998; }
+        .twitter { background: #1da1f2; }
+        .youtube { background: #ff0000; }
+        @media (max-width: 768px) {
+            .container { margin-top: 0; padding: 20px; }
+            header { height: 200px; }
+            header h1 { font-size: 28px; }
+            .footer-col { flex-basis: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>DỊCH VỤ TƯ VẤN ĐẦU TƯ</h1>
+        <p>Chiến lược giao dịch theo xu hướng từ Công ty chứng khoán VPS</p>
+    </div>
+</header>
+
+<div class="container">
+    <div class="intro-section">
+        <h2><strong>CHIẾN LƯỢC GIAO DỊCH</strong></h2>
+        <p>Đầu tiên chúng ta cùng xét 2 ví dụ sau:</p>
+        <p><em>Ví dụ:</em></p>
+    </div>
+    <div class="section">
+        <h2>Ví dụ cổ phiếu điển hình</h2>
+        <img src="https://n18.vn/wp-content/uploads/2025/05/HPG-1-1024x414.jpg" alt="Cổ phiếu VHC" class="chart-img">
+    </div>
+    <div class="section">
+        <img src="https://n18.vn/wp-content/uploads/2025/05/SSI--1024x414.jpg" alt="Cổ phiếu VHC" class="chart-img">
+    </div>
+    <div class="section">
+        <h2>ẢNH 1</h2>
+        <ul>
+            <li>Có thể thấy thời gian tăng giá chính của cổ phiếu chỉ là 1/5 tổng thời gian vận động 1 chu kỳ của cổ phiếu ~ 20% thời gian</li>
+            <li>NĐT có thể kiểm tra và sẽ thấy tỷ lệ này được lặp đi lặp lại ở phần lớn cổ phiếu</li>
+            <li> <strong>=> Thời gian cổ phiếu thực sự tăng giá chỉ là 20% – 30% trên tổng số 100% thời gian vận động</strong></li>
+        </ul>
+        <h2>ẢNH 2</h2>
+            <li>Rẻ hơn so với tương lai là định hướng đầu tư của 95% NĐT theo đuổi thị trường trong mọi thời điểm.<br>
+                Nhưng trên thị trường luôn có những thời điểm giá cổ phiếu rẻ hơn khi so với tài sản doanh nghiệp hiện tại ngay lúc đó<br>
+                SSI trong ảnh 2 là một ví dụ:<br>
+                Thời điểm vốn hóa về 19.000 tỷ thì ngay tại thời điểm đó vốn chủ của SSI đã là 22.162 tỷ<br>
+                SSI thời điểm đó chỉ có danh mục tự doanh cổ phiếu là 750 tỷ, còn lại được nắm giữ ở dạng tiền (70%) và trái phiếu (30%)<br>
+                SSI cho biết 85% lượng trái phiếu này là trái phiếu của các tổ chức tín dụng và ngân hàng lớn tại Việt Nam<br>
+                (nhóm “Big 4” gồm Vietcombank, BIDV, Agribank và VietinBank)<br>
+                => Có thể coi 21.787 tỷ này có thể quy đổi thành tiền tươi ngay lập tức là rất rất cao<br>
+                (Đã tính giả định danh mục tự doanh 750 tỷ giảm 50%)<br>
+                => Bỏ ra 19.000 tỷ đổi lại 21.787 tỷ<br>
+                Tương tự như việc bỏ ra 85.000 vnđ để mua một tờ 100.000vnđ với 0% rủi ro<br>
+                Chưa tính tới SSI hoạt động như một Bank nhưng lại không có dạng nợ xấu như Bank – Công việc kinh doanh chỉ hòa tới lãi chứ rất khó lỗ<br>
+                (Lợi nhuận SSI đem lại 1000 tỷ – 2000 tỷ / năm và còn rất nhiều dư địa trong tương lai)<br>
+                Giá khi đó đã thực sự rẻ khi so với ngay lượng tài sản của doanh nghiệp tại thời điểm đó</strong><br>
+                Tuy nhiên những thời điểm như này lại rất ngắn và không thường xuyên xuất hiện<br>
+            </li>
+    </div>
+
+
+        <div class="section">
+            <h2>ĐÚC KẾT</h2>
+        </div>
+            <li>Chỉ cần tham gia vào được 1 trong 2 thời điểm như 2 ví dụ điển hình bên trên<br>
+                NĐT đã gần như cầm chắc lợi nhuận trong tay tới 80%</li>
+
+            <li>Đây cũng chính là 2 thời điểm được Kinh Doanh Đầu Tư coi là kim chỉ nam trong quá trình đầu tư trên TTCK<br>
+                Tuy nhiên do thời điểm số 2 không thường xuyên xuất hiện và khi xuất hiện cũng diễn ra trong thời gian rất ngắn</li>
+
+            <li>Nên trong quá trình đầu tư KDĐT tập trung thể hiện nhiều hơn ở những thời điểm số 1<br>
+                và đặt tên phương pháp là <strong>Trend Following</strong> <br>
+                => Tập trung vào 20% – 30% thời gian vàng tăng giá của một cổ phiếu</li>
+        <div class="grid-container">
+            <div class="chart">
+                <img src="https://n18.vn/wp-content/uploads/2025/05/CEO-2021-1024x414.jpg" alt="Cổ phiếu CEO">
+                <h3>Cổ phiếu CEO</h3>
+            </div>
+            <div class="chart">
+                <img src="https://n18.vn/wp-content/uploads/2025/05/DXG-2023-1-1024x414.jpg" alt="Cổ phiếu DXG">
+                <h3>Cổ phiếu DXG</h3>
+            </div>
+            <div class="chart">
+                <img src="https://n18.vn/wp-content/uploads/2025/05/VHC-2022-1024x414.jpg" alt="Cổ phiếu VHC">
+                <h3>Cổ phiếu VHC</h3>
+            </div>
+            <div class="chart">
+                <img src="https://n18.vn/wp-content/uploads/2025/05/HPG-2022-1024x414.jpg" alt="Cổ phiếu HPG">
+                <h3>Cổ phiếu HPG</h3>
+                <h3>Ảnh ví dụ thực tế về các tư vấn của KDĐT theo phương pháp Trend Following</h3>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Dịch vụ tư vấn đầu tư</h2>
+            <div class="chart">
+                <img src="https://n18.vn/wp-content/uploads/2025/05/dich-vu-1024x623.jpg" alt="Cổ phiếu HPG"><br>
+                <li>NĐT vui lòng liên hệ Zalo/Phone:<br>
+                    <strong>PHẠM QUỐC ĐẠT – 0965366067</strong></li>
+            </div>
+        </div>
+</div>
+    <footer>
+                <div class="footer-col">
+                    <img src="https://via.placeholder.com/100x40?text=KDĐT+Logo" alt="KDĐT Logo" style="height:40px; margin-bottom:10px">
+                    <h4>CÔNG TY CỔ PHẦN CHỨNG KHOÁN VPS</h4>
+                    <p>Trụ sở: Sao Biển 01-26, Vinhomes Ocean Park, Dương Xá, Gia Lâm, Hà Nội</p>
+                    <p>Email: <strong>phamdat28011997@gmail.com</strong></p>
+                    <p>Hotline: 0965366067</p>
+                    <p>Kênh hỗ trợ khách hàng: <a href="#">Chat với chúng tôi</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Dịch vụ KDĐT</h4>
+                    <ul>
+                        <li>Tài chính</li>
+                        <li><a href="#">Hệ thống Trend Following</a></li>
+                        <li><a href="#">Tư vấn tài chính cá nhân trọn gói</a></li>
+                        <li><a href="#">Tư vấn tài chính cá nhân theo nhu cầu</a></li>
+                    </ul>
+                    <h4>Đào tạo</h4>
+                    <ul>
+                        <li><a href="#">Tài chính cá nhân toàn diện</a></li>
+                        <li><a href="#">Đầu tư chứng khoán chuyên nghiệp</a></li>
+                        <li><a href="#">360 độ về tiền</a></li>
+                        <li><a href="#">Tài chính cá nhân cơ bản</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Chính sách</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                    <h4>Về KDĐT</h4>
+                    <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Đối tác kinh doanh</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Theo dõi chúng tôi tại</h4>
+                    <div class="social-icons">
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>© 2025 Công ty cổ phẩn chứng khoán VPS. All rights reserved.</p>
+                </div>
+            </footer>
+
+            <script>
+                // Thêm hiệu ứng scroll mượt
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+
+                // Xử lý lỗi hình ảnh
+                document.addEventListener('DOMContentLoaded', function() {
+                    const images = document.querySelectorAll('img');
+                    images.forEach(img => {
+                        img.onerror = function() {
+                            this.src = 'https://via.placeholder.com/' + this.width + 'x' + this.height + '?text=Hình+ảnh+không+tải+được';
+                        };
+                    });
+                });
+            </script>
+
+</body>
+</html>
